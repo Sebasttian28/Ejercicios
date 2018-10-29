@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi primer formulario</title>
+</head>
+<style type="text/css" media="screen"> 
+input:hover{background:white ;
+	border: solid 2px white;
+}
+form{float;
+	position: absolute;
+	margin: 0px 465px;
+	top: 80px;
+	padding: 10px;
+	height: 200px;
+	width: 200px;
+	background: yellow;
+	border: solid 3px black;
+	width:280px
+
+
+}
+
+</style> 
+	
+
+<body>
+
+<form action = "validar.php" method="Post" >
+
+	<p>Nombre <input type="text" name="nombre" required=""><p>
+	<p>Edad <input type="number" name= "edad" required="" min="1" max= "100" ><p>	
+	<p>Seleccione la fecha <input type="date" name="fecha" required=""><p>	
+	<p>E-mail <input type="email" name="correo" required=""><p>	
+	<center><input type="submit">
+
+
+</body>
+</html>

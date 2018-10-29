@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<meta charset="utf-8">
+<title>REGISTRO</title>
+<!--se hace enlace a los estilos de la pagina-->
+<link rel="stylesheet" type="text/css" href="style3.css" />
+<!--se hace enlace a los estilos de la fuente de google font-->
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Yellowtail" rel="stylesheet">
+<!--se hace enlace a los estilos de iconos-->
+<link rel="stylesheet" type="text/css" href="fonts/style.css" />
+
+
+</head>
+
+
+<style type="text/css" media="screen"> 
+input:hover{background:white ;
+	border: solid 2px ;
+}
+form{float;
+	position: absolute;
+	margin: 0px 525px;
+	top: 80px;
+	padding: 10px;
+	height: 300px;
+	width: 200px;
+	background: skyblue;
+	border: solid 3px black;
+	width:280px
+
+
+}
+
+</style> 
+
+<body>
+
+
+<!-- SE CREA FORMULARIO y una clase -->
+
+		<form class="caja" action = "validar2.php" method="Post">
+			<h2>SUGERENCIAS</h2>
+
+
+		
+		<!--SE UTILIZA LA ETIQUETA <span> para agrupar estilos
+		y se define como clase donde se enlaza los iconos del archivo de estilos de iconos-->
+
+		<label for="Nombre"><span class="icon-e997"> </span> Nombre:</label>
+		<br>
+
+
+		<input type="text" placeholder="Escriba su Nombre" required="" id="nombre" name="Nombre"  />
+		<br>		
+
+		<label for="email"><span class="icon-email"> </span>Email:</label>
+		<br>
+
+		<input type="email" placeholder="Escriba su correo electronico" required="" id="email" name="correo" />
+		<br>
+
+		<label for="mensaje:"><span class="icon-edit"> </span>Mensaje:</label>
+		<br>
+		
+		<textarea id ="mensaje" placeholder="Escriba mensaje"
+		name ="mensaje"/ > </textarea>
+		<br>
+
+		<input type="submit" value="Enviar" class="button" />
+		<br>
+				
+		</form>  <!-- form -->
+		
+
+</body>
+</html>

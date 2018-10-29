@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solicitar una cita</title>
+</head>
+
+<style type="text/css" media="screen"> 
+
+input:hover{background:white ;
+	border: solid 2px white;
+
+}
+form{float;
+	position: absolute;
+	margin: 0px 500px;
+	top: 80px;
+	padding: 10px;
+	height: 370px;
+	width: 200px;
+	background: skyblue;
+	border: solid 3px black;
+	width:280px;
+	text-align: center;
+
+}
+
+</style> 
+
+
+<body>
+
+<form action = "validar2.php" method="get" >
+	
+	<p>Digite su nombre <br><input type="text" name="Nombre" required=""><p>
+	<p>Numero de documento <br><input type="text" name="Doc" required=""><p>
+	<p>Tipo de cita <br><br>
+	<input type="radio" name="Cita" value="1"> 1<br>
+  	<input type="radio" name="Cita" value="2"> 2<br>
+  	<input type="radio" name="Cita" value="3"> 3<br>
+  	<input type="radio" name="Cita" value="4"> 4<br>
+  	<input type="radio" name="Cita" value="5"> 5<br>
+	<center><input type="submit" value="Solicitar">
+													
+
+
+</body>
+</html>

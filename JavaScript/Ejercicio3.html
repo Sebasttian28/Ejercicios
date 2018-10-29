@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio3</title>
+</head>
+<body>
+<script>
+	var notas=0,n=0,semestre=0,total=0,i,j;
+	var s = new Array(5);
+
+	alert("Digite las tres notas de la materia ")
+
+	for (i = 1; i <= 5; i++){
+
+		alert("Materia  "+i);
+		s[i] = new Array(3);   
+
+		for (j = 1; j <= 3; j++){
+
+			alert("Digite la nota "+j);
+
+			s[i][j]=parseInt(prompt("Digite su nota"));
+
+			n=n+s[i][j];
+			notas=n/3;
+			
+		}
+		if (notas>=3){
+			alert("Usted aprobó la materia");
+			semestre=semestre+notas;
+			total=semestre/5;
+			notas=0;
+			n=0;			
+		}
+		else{
+			alert("Usted reprobó la materia ");
+			semestre=semestre+notas;
+			total=semestre/5;
+			notas=0;
+			n=0;
+		}
+
+	}
+
+	if (total>=3){
+			alert("Usted aprobó el semestre");
+			}	
+		else{
+			alert("Usted reprobó el semestre");
+			}
+
+</script>
+</body>
+</html>
